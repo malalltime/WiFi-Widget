@@ -6,15 +6,14 @@ plugins {
     alias(libs.plugins.wifiwidget.hilt)
     alias(libs.plugins.play)
     alias(libs.plugins.baselineprofile)
-    alias(libs.plugins.kotlin.compose.compiler)
-    alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.kotlin.compose.compiler)alias(libs.plugins.kotlin.serialization)
 }
 
 android {
     defaultConfig {
         applicationId = namespace
 
-        versionCode = project.property("versionCode").toString().toInt()
+        versio nCode = project.property("versionCode").toString().toInt()
         versionName = version.toString()
 
         // Name built bundles "{versionName}-{buildFlavor}.aab"
